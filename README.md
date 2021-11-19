@@ -33,3 +33,12 @@ Go to the following link in your browser then copy back the authorization code:
 https://accounts.google.com/o/oauth2/auth?very-long-long-long-url
 Token: token you get in your browser after granted permissions to the application
 ```
+
+## Limitations
+
+It works, but Google API is a piece of ^&-%. It does not return names for a lot of users.
+
+References:
+* https://stackoverflow.com/questions/65920897/google-people-api-listdirectorypeople-is-not-returning-names-for-some-users-in-t
+* https://stackoverflow.com/questions/65801879/google-people-api-listdirectorypeople-is-not-returning-names-for-any-users-in-th
+
