@@ -36,9 +36,17 @@ Token: token you get in your browser after granted permissions to the applicatio
 
 ## Limitations
 
+### Missing Names / Nicknames
+
 It works, but Google API is a piece of ^&-%. It does not return names for a lot of users.
 
 References:
 * https://stackoverflow.com/questions/65920897/google-people-api-listdirectorypeople-is-not-returning-names-for-some-users-in-t
 * https://stackoverflow.com/questions/65801879/google-people-api-listdirectorypeople-is-not-returning-names-for-any-users-in-th
 
+As a workaround
+* If Nickname is empty, the system generates Nickname from the email address
+  (everything before `@`)
+* If Name is empty, the system generates a Name from the email address by
+  replacing all `.` with a space character and converting first letters to
+  uppercase. (everything before `@`)
